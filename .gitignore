@@ -1,0 +1,16 @@
+# Ignorar archivos temporales
+*.log
+*.tmp
+
+# Ignorar la carpeta de dependencias
+node_modules/
+
+# Ignorar configuraciones personales
+.env
+.vscode/
+bitacora-de-desarrollo-blog-personal.md
+!README.md
+
+# Ignorar compilaciones
+build/
+dist/

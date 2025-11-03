@@ -1,0 +1,102 @@
+@import url('./base.css');
+@import url('./components/navbar.css');
+
+/* ============ INDEX PAGE ============ */
+
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 100px;
+}
+
+.hero .text h1 {
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.hero .text p {
+  margin: 30px 0;
+  max-width: 400px;
+}
+
+.hero button {
+  background-color: var(--color-secondary);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.hero .image img {
+  width: 480px;
+  border-radius: 12px;
+  box-shadow: var(--shadow-soft);
+}
+
+/* FEATURE SECTIONS */
+.feature {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.feature.reverse {
+  flex-direction: row-reverse;
+}
+
+.feature .text h2 {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.feature .text p {
+  margin-top: 20px;
+}
+
+.feature .arrow {
+  font-size: 28px;
+  margin-top: 20px;
+  background: var(--color-light);
+  padding: 10px 16px;
+  border-radius: 50%;
+}
+
+.feature .image img {
+  width: 450px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: var(--shadow-soft);
+}
+
+/* CTA */
+.cta {
+  text-align: center;
+  background: linear-gradient(180deg, var(--color-bg), var(--color-light));
+}
+
+.cta h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .hero, .feature {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 20px;
+  }
+
+  .hero .image img,
+  .feature .image img {
+    width: 100%;
+  }
+}
