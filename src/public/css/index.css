@@ -5,6 +5,7 @@
 
 /* HERO */
 .hero {
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -36,20 +37,27 @@
 
 .hero .image img {
   width: 780px;
-  border-radius: 12px;
-  box-shadow: var(--shadow-soft);
 }
 
 /* FEATURE SECTIONS */
 .feature {
+  height: 80vh;
+  margin: 60px 0;
+  padding: 0px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 60px;
+  background: var(--color-bg);
 }
 
 .feature.reverse {
   flex-direction: row-reverse;
+}
+
+.feature .text {
+  max-width: 600px;
+  margin: 30px 60px;
 }
 
 .feature .text h2 {
@@ -61,19 +69,31 @@
   margin-top: 20px;
 }
 
-.feature .arrow {
-  font-size: 28px;
-  margin-top: 20px;
-  background: var(--color-light);
-  padding: 10px 16px;
-  border-radius: 50%;
+.feature .image {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: baseline;
+  justify-content: end;
 }
 
 .feature .image img {
-  width: 450px;
-  border-radius: 10px;
+  width: auto;
+  height: 100%;
   object-fit: cover;
-  box-shadow: var(--shadow-soft);
+}
+
+/* VIDEO */
+.video-section {
+  text-align: center;
+}
+
+.video-box iframe {
+  width: 80%;
+  height: 400px;
+  border-radius: 12px;
+  border: none;
+  box-shadow: var(--shadow-strong);
 }
 
 /* CTA */

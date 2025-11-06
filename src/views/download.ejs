@@ -3,103 +3,81 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi App - Landing Page</title>
+  <title>MU App</title>
+  <link rel="icon" type="image/png" href="./img/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="./img/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="./img/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="MU" />
+  <link rel="manifest" href="./img/favicon/site.webmanifest" />
+  <meta name="description" content="Descarga la app oficial de Memory Umbrella, descrubre sus caracteristicas y toma el control de tu Memory Umbrella 1." />
+  <meta name="keywords" content="Memory Umbrella App, sombrilla inteligente, alta fidelidad, tecnología del dia a dia, gatgets" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/download.css">
 </head>
 <body>
+  
   <!-- HEADER -->
-  <header class="navbar">
-    <div class="logo">MiApp</div>
-    <nav>
-      <a href="#features">Características</a>
-      <a href="#testimonios">Opiniones</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
-    <div class="buttons">
-      <a href="https://github.com/iamandydev/memory-umbrella-app/releases/download/v0.5/UmbrellaAppv0.5.apk" class="btn primary">Descargar App</a>
-      <a href="https://github.com/iamandydev/memory-umbrella-app" class="btn secondary">Ver en GitHub</a>
+   <header class="navbar">
+    <div class="logo">
+      <a href="https://memory-umbrella.vercel.app/">
+        <img style="height: 60px;" src="./img/memory_umbrella_logo.png" alt="">
+      </a>
     </div>
+    <nav>
+      <a href="/productos">Productos</a>
+      <a href="/precios">Precios</a>
+      <a href="./">Overview</a>
+      <a href="#">Contacts</a>
+    </nav>
   </header>
 
   <!-- HERO -->
   <section class="hero">
     <div class="text">
-      <h1>Descubre <span>MiApp</span></h1>
-      <p>Una experiencia fluida, moderna y segura para conectarte con tu dispositivo inteligente.</p>
+      <h1>Descarga <span>Memory Umbrella App</span></h1>
+      <p>Una experiencia fluida, moderna y segura para conectarte con tu Memory Umbrella One.</p>
       <div class="hero-buttons">
         <a href="https://github.com/iamandydev/memory-umbrella-app/releases/download/v0.5/UmbrellaAppv0.5.apk" class="btn primary large">Descargar ahora</a>
         <a href="https://github.com/iamandydev/memory-umbrella-app/" class="btn secondary large">Código fuente</a>
       </div>
     </div>
     <div class="mockup">
-      <img src="https://cdn.dribbble.com/users/1148876/screenshots/17359807/media/3e0de538f9e0b93bfae9b8de41b1449f.png" alt="Mockup app">
-    </div>
-  </section>
-
-  <!-- OFERTA LIMITADA -->
-  <section class="offer">
-    <h2>Oferta por tiempo limitado</h2>
-    <div class="countdown">
-      <div><span>01</span><p>Días</p></div>
-      <div><span>12</span><p>Horas</p></div>
-      <div><span>42</span><p>Minutos</p></div>
-      <div><span>36</span><p>Segundos</p></div>
+      <img src="./img/app-home.png" alt="Mockup app">
     </div>
   </section>
 
   <!-- FEATURES -->
   <section id="features" class="features">
     <h2>Características</h2>
+    <br>
     <div class="cards">
       <div class="card">
-        <img src="https://cdn-icons-png.flaticon.com/512/992/992700.png" alt="">
+        <img src="./img/signal.png" alt="">
         <h3>Conexión rápida</h3>
         <p>Empareja tu dispositivo en segundos con Bluetooth de baja latencia.</p>
       </div>
       <div class="card">
-        <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" alt="">
+        <img src="./img/bell.png">
         <h3>Notificaciones inteligentes</h3>
-        <p>Recibe alertas cuando tu dispositivo se desconecte o apague.</p>
+        <p>Recibe alertas cuando olvides tu paraguas.</p>
       </div>
       <div class="card">
-        <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="">
+        <img src="./img/necktie.png" alt="">
         <h3>Diseño elegante</h3>
         <p>Una interfaz moderna, fluida y minimalista inspirada en Apple UI.</p>
       </div>
-    </div>
-  </section>
-
-  <!-- VIDEO -->
-  <section class="video-section">
-    <h2>Conoce más</h2>
-    <div class="video-box">
-      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Demo App" allowfullscreen></iframe>
-    </div>
-  </section>
-
-  <!-- TESTIMONIOS -->
-  <section id="testimonios" class="testimonios">
-    <h2>Opiniones de nuestros usuarios</h2>
-    <div class="cards">
       <div class="card">
-        <p>"Una app increíble, se conecta rápido y nunca falla."</p>
-        <h4>- Andrea</h4>
-      </div>
-      <div class="card">
-        <p>"El diseño es hermoso, muy intuitivo y fluido."</p>
-        <h4>- Felipe</h4>
-      </div>
-      <div class="card">
-        <p>"Perfecta para mi proyecto con ESP32. Muy recomendada."</p>
-        <h4>- Camila</h4>
+        <img src="./img/remote.png" alt="">
+        <h3>Control</h3>
+        <p>Accede a increibles funciones de tu Memory Umbrella One.</p>
       </div>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer id="contacto">
-    <p>© 2025 MiApp. Desarrollado con ❤️ por <a href="https://github.com/tuusuario">tuusuario</a></p>
+    <p>© 2025 Memory Umbrella</p>
   </footer>
 </body>
 </html>
