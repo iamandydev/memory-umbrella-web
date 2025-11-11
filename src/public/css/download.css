@@ -5,6 +5,7 @@
 
 /* HERO */
 .hero {
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -82,6 +83,12 @@
 .features .card img {
   width: 60px;
   margin-bottom: 20px;
+}
+
+.features .card.product img {
+  margin-bottom: auto;
+  width: 90%;
+  height: auto;
 }
 
 /* TESTIMONIOS */
