@@ -1,0 +1,96 @@
+/* ============ BASE ============ */
+:root {
+  --color-primary: #007aff;
+  --color-dark: #111;
+  --color-light: #f8f8f8;
+  --color-gray: #555;
+  --color-bg: #fff;
+
+  --shadow-soft: 0 3px 10px rgba(0,0,0,0.05);
+  --shadow-strong: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.25s ease-in-out;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: var(--color-dark);
+  background-color: var(--color-light);
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+/* UTILIDADES */
+section {
+  padding: 100px 60px;
+}
+
+/* BOTONES */
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn.primary {
+  background: var(--color-primary);
+  color: white;
+  box-shadow: 0 3px 10px rgba(0,122,255,0.3);
+}
+
+.btn.primary:hover {
+  background: #005fd1;
+}
+
+.btn.secondary {
+  background: var(--color-light);
+  color: var(--color-dark);
+}
+
+.btn.secondary:hover {
+  background: #e0e0e0;
+}
+
+/* TEXTOS */
+h1, h2, h3, h4 {
+  color: var(--color-dark);
+}
+
+p {
+  color: var(--color-gray);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 40px;
+  background: var(--color-light);
+  color: var(--color-gray);
+}
+
+footer a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVE BASE */
+@media (max-width: 900px) {
+  section {
+    padding: 60px 30px;
+  }
+}
