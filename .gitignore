@@ -1,0 +1,16 @@
+# Ignorar archivos temporales
+*.log
+*.tmp
+
+# Ignorar la carpeta de dependencias
+node_modules/
+
+# Ignorar configuraciones personales
+.env
+.vscode/
+!README.md
+package-lock.json
+
+# Ignorar compilaciones
+build/
+dist/

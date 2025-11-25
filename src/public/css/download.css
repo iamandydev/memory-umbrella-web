@@ -1,0 +1,130 @@
+
+section {
+  padding: 100px 10%;
+}
+
+/* ====================================== */
+/*                HERO                    */
+/* ====================================== */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 80px 10%;
+  flex-wrap: wrap;
+}
+
+.hero .text {
+  flex: 1;
+  min-width: 320px;
+}
+
+.hero-buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.hero-buttons a {
+  font-size: 1.1rem;
+}
+
+/* Mockup */
+.mockup {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.mockup img {
+  width: 700px;
+  transform: perspective(800px) rotateY(-8deg);
+  transition: 0.4s ease;
+}
+
+.mockup img:hover {
+  transform: perspective(800px) rotateY(0deg) scale(1.04);
+}
+
+/* ====================================== */
+/*              FEATURES                  */
+/* ====================================== */
+.features {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: var(--card-bg);
+  padding: 35px 25px;
+  width: 260px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: var(--shadow-soft);
+  transition: 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.card:hover {
+  background: var(--card-hover);
+  transform: translateY(-6px);
+  border-color: var(--platinate-blue);
+}
+
+.card img {
+  width: 55px;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  font-size: 1.3rem;
+  color: var(--platinate-blue);
+  margin-bottom: 10px;
+}
+
+/* ====================================== */
+/*               RESPONSIVE               */
+/* ====================================== */
+@media (max-width: 900px) {
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 20px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .mockup img {
+    max-width: 320px;
+  }
+
+  section {
+    padding: 60px 20px;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .card {
+    width: 80%;
+    max-width: 320px;
+  }
+}

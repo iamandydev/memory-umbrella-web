@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Umbrela Productos</title>
+    <%- include('components/head-metadata'); %> <link rel="stylesheet"
+    href="./css/products.css".css">
+  </head>
+  <body>
+    <!-- HEADER -->
+    <%- include('components/navbar'); %>
+
+    <!-- FEATURES -->
+    <section id="features" class="features">
+      <h2>Productos</h2>
+      <br />
+      <div class="cards">
+        <div class="card product">
+          <a href="./">
+            <img
+              src="./img/memory_umbrella_case.png"
+              alt="Memory Umbrella One"
+            />
+            <h3>Memory Umbrella One</h3>
+          </a>
+        </div>
+
+        <div class="card product">
+          <a href="./download">
+            <img src="./img/favicon/favicon.svg" alt="Memory Umbrella App" />
+            <h3>Memory Umbrella APP</h3>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <%- include('components/footer'); %>
+  </body>
+</html>

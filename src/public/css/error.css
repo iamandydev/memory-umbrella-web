@@ -1,0 +1,94 @@
+/* ============================
+        ERROR PAGE
+============================ */
+/* ====================================== */
+/*          VARIABLES GLOBALES            */
+/* ====================================== */
+:root {
+  --platinate-blue: #233dff;
+  --ink-black: #0d1b2a;
+  --ghost-white: #f8f9ff;
+  --text-gray: #cfd3e1;
+  --card-bg: #101e33;
+  --card-hover: #162a46;
+  --shadow-soft: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+/* ====================================== */
+/*               GENERAL                  */
+/* ====================================== */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--ink-black);
+  color: var(--ghost-white);
+  font-family: "Inter", sans-serif;
+}
+
+
+/* Layout general */
+.hero {
+  height: 80vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 100px 60px;
+  gap: 40px;
+}
+
+/* Texto */
+.hero .text {
+  max-width: 600px;
+}
+
+.hero h1.error-text {
+  font-size: 70px;
+  line-height: 1;
+  color: var(--imperial-red);
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  color: #dcdcdc;
+  max-width: 450px;
+}
+
+/* Imagen */
+.hero .image img {
+  width: 500px;
+  height: 500px;
+}
+
+/* ============================
+        RESPONSIVE
+============================ */
+
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    height: auto;
+    padding: 60px 20px;
+  }
+
+  .hero .image img {
+    width: 500px;
+    height: 500px;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero h1 {
+    font-size: 50px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+  .hero .image img {
+    width: 200px;
+    height: 200px;
+  }
+}
+

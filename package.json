@@ -1,0 +1,33 @@
+{
+  "name": "memory-umbrella-website",
+  "version": "0.0.4",
+  "description": "Sitio web oficial del proyecto Memory Umbrella.",
+  "main": "src/app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "keywords": [
+    "memory umbrella",
+    "memory-umbrella",
+    "memoryumbrella",
+    "memoryumbrellawebsite",
+    "memory-umbrella-website",
+    "website",
+    "sitio web",
+    "memory-umbrella-app",
+    "memory umbrella app",
+    "memory umbrella one"
+  ],
+  "author": "iamandydev",
+  "license": "MIT",
+  "dependencies": {
+    "@vercel/speed-insights": "^1.2.0",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "morgan": "^1.10.1",
+    "node-fetch": "^3.3.2",
+    "nodemon": "^3.1.10"
+  }
+}

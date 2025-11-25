@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+/* Coolors Exported Palette - https://coolors.co/ff0033-ff6b00-ffd500-ffd93d-3dff8c-00fff7-233dff-9d4dff-b84fff */
+
+:root {
+  /* ============================
+     VARIABLES CSS (HEX)
+  ============================= */
+  --ghost-white: #f8f9ff;
+  --gray: #7a7a7a;
+  --eerie-black: #1a1a1a;
+  --rich-black: #0d1b2a;
+  --marian-blue: #2e4a9e;
+
+  --imperial-red: #ff0033;
+  --pumpkin: #ff6b00;
+  --gold: #ffd500;
+  --mustard: #ffd93d;
+  --spring-green: #3dff8c;
+  --fluorescent-cyan: #00fff7;
+  --palatinate-blue: #233dff;
+  --electric-purple: #9d4dff;
+  --phlox: #b84fff;
+  --gradient-bottom-right: linear-gradient(
+    135deg,
+    var(--eerie-black),
+    var(--rich-black),
+    var(--marian-blue),
+    var(--electric-purple),
+    var(--phlox)
+  );
+  --gradient-radial: radial-gradient(
+    circle,
+    var(--palatinate-blue),
+    var(--electric-purple),
+    var(--phlox),
+    var(--marian-blue),
+    var(--rich-black),
+    var(--eerie-black)
+  );
+  --gradient-top-right: linear-gradient(
+    45deg,
+    var(--rich-black),
+    var(--marian-blue),
+    var(--palatinate-blue),
+    var(--electric-purple),
+    var(--phlox)
+  );
+}
+
+/* ============================ GRADIENTES CSS ============================= */
+.aurora-bg {
+  width: 100%;
+  height: 100vh;
+  background: radial-gradient(
+      circle at 20% 30%,
+      var(--electric-purple) 0%,
+      transparent 60%
+    ),
+    radial-gradient(circle at 80% 70%, var(--phlox) 0%, transparent 60%),
+    radial-gradient(
+      circle at 50% 90%,
+      var(--palatinate-blue) 0%,
+      transparent 70%
+    ),
+    linear-gradient(180deg, var(--rich-black), var(--eerie-black));
+  backdrop-filter: blur(40px);
+  filter: blur(0.4px) contrast(105%);
+}
+
+/* Textura granular suave */
+.aurora-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQIW2P4DwQACfsD/QoBsTkAAAAASUVORK5CYII=");
+  opacity: 0.12;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+}
+
+/* RESET */
+*,
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.25s ease-in-out;
+
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+}
+
+body {
+  color: var(--eerie-black);
+  background-color: var(--ghost-white);
+}
+
+/* TEXTOS */
+h1,
+.font-anton {
+  color: var(--palatinate-blue);
+  font-family: "Anton", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-top: 30px;
+  font-optical-sizing: auto;
+  font-weight: semi-bold;
+  font-size: 28px;
+}
+
+h3 {
+  margin-top: 30px;
+  font-optical-sizing: auto;
+  font-weight: semi-bold;
+  font-size: 20px;
+}
+
+.micro-text {
+  font-size: 12px;
+}
+
+/* BOTONES */
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn.primary {
+  background: var(--palatinate-blue);
+  color: white;
+  box-shadow: 0 3px 10px rgba(0, 122, 255, 0.3);
+}
+
+.btn.primary:hover {
+  background: var(--marian-blue);
+}
+
+.btn.secondary {
+  background: var(--gray);
+  color: var(--ghost-white);
+}
+
+.btn.secondary:hover {
+  background: var(--marian-blue);
+}
+
+/* ============ NAVBAR ============ */
+.navbar {
+  width: 100%;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--ghost-white);
+  box-shadow: var(--gray);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar .logo img {
+  height: 50px;
+}
+
+.navbar nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: var(--eerie-black);
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar nav a:hover {
+  color: var(--palatinate-blue);
+}
+
+.navbar .buttons .btn {
+  margin-left: 10px;
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar nav a {
+    margin: 10px;
+  }
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 40px;
+  background: var(--color-light);
+  color: var(--color-gray);
+}
+
+footer a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

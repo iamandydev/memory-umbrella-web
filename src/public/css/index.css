@@ -1,0 +1,79 @@
+
+section {
+  padding: 80px 10%;
+}
+
+/* ============================= */
+/*          SECCIÓN HERO         */
+/* ============================= */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  padding-top: 120px;
+}
+
+.hero .image img {
+  width: 700px;
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Floating animation */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-14px); }
+  100% { transform: translateY(0px); }
+}
+
+/* ============================= */
+/*      SECCIONES DE FEATURES    */
+/* ============================= */
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.feature.reverse {
+  flex-direction: row-reverse;
+}
+
+.feature .text p,
+.feature ul li {
+  color: var(--text-gray);
+}
+
+.feature .image img {
+  width: 420px;
+  border-radius: 16px;
+}
+
+/* ============================= */
+/*          LISTAS               */
+/* ============================= */
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 8px;
+  color: var(--text-gray);
+}
+
+/* ============================= */
+/*          RESPONSIVE           */
+/* ============================= */
+
+@media (max-width: 900px) {
+  .hero,
+  .feature {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero .image img,
+  .feature .image img {
+    width: 85%;
+  }
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Umbrella App</title>
+  <%- include('components/head-metadata'); %>
+  <link rel="stylesheet" href="./css/download.css">
+</head>
+<body>
+  
+  <!-- HEADER -->
+   <%- include('components/navbar'); %>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="text">
+      <h1>Descarga Memory Umbrella App</h1>
+      <p>Una experiencia fluida, moderna y segura para conectarte con tu Memory Umbrella One.</p>
+      <div class="hero-buttons">
+        <a href="https://github.com/iamandydev/memory-umbrella-app/releases/download/v0.5/UmbrellaAppv0.5.apk" class="btn primary large">Descargar ahora</a>
+        <a href="https://github.com/iamandydev/memory-umbrella-app/">Código fuente</a>
+      </div>
+    </div>
+    <div class="mockup">
+      <img src="./img/app-home.png" alt="Mockup app">
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features" class="features">
+    <h2>Características</h2>
+    <br>
+    <div class="cards">
+      <div class="card">
+        <img src="./img/signal.png" alt="">
+        <h3>Conexión rápida</h3>
+        <p>Empareja tu dispositivo en segundos con Bluetooth de baja latencia.</p>
+      </div>
+      <div class="card">
+        <img src="./img/bell.png">
+        <h3>Notificaciones inteligentes</h3>
+        <p>Recibe alertas cuando olvides tu paraguas.</p>
+      </div>
+      <div class="card">
+        <img src="./img/necktie.png" alt="">
+        <h3>Diseño elegante</h3>
+        <p>Una interfaz moderna, fluida y minimalista inspirada en Apple UI.</p>
+      </div>
+      <div class="card">
+        <img src="./img/remote.png" alt="">
+        <h3>Control</h3>
+        <p>Accede a increibles funciones de tu Memory Umbrella One.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <%- include('components/footer'); %>
+  </footer>
+</body>
+</html>

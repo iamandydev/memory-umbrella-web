@@ -1,0 +1,46 @@
+/* ====================================== */
+/*                GENERAL                 */
+/* ====================================== */
+
+section {
+  padding: 100px 12%;
+}
+
+/* ====================================== */
+/*                 FEATURE                */
+/* ====================================== */
+.feature {
+  display: flex;
+  justify-content: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.feature .text {
+  max-width: 900px;
+}
+
+.feature p {
+  color: var(--text-gray);
+  margin-bottom: 15px;
+  font-size: 1.05rem;
+}
+
+.feature p:last-child {
+  margin-bottom: 0;
+}
+
+/* Separación entre secciones */
+.feature:not(:last-child) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* ====================================== */
+/*               RESPONSIVE               */
+/* ====================================== */
+@media (max-width: 900px) {
+  
+  section {
+    padding: 60px 20px;
+  }
+}
