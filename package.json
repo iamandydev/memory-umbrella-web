@@ -1,6 +1,6 @@
 {
   "name": "memory-umbrella-website",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Sitio web oficial del proyecto Memory Umbrella.",
   "main": "src/app.js",
   "type": "module",
